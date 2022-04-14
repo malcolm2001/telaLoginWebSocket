@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/index.js" defer></script>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="card-cadastrar">
+            <h1>Cadastre-se </h1>
+
+            
+            <div id="msgErro"></div>
+            <div id="msgSucess"></div>
+
+            <div class="label-float">
+                <input type="text" id="nome" placeholder="" required>
+                <label id="labelNome" for="nome">Nome</label>
+            </div ><!--label-float-->
+
+            <div class="label-float">
+                <input type="text" id="usuario" placeholder="" required>
+                <label id="labelUsuario" for="usuario">Usuario</label>
+            </div ><!--label-float-->
+
+            <div class="label-float">
+                <input type="password" id="senha" placeholder="" required>
+                <label id="labelSenha" for="senha">Senha</label>
+                <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div ><!--label-float-->
+
+            <div class="label-float">
+                <input type="password" id="confirmaSenha" placeholder="" required>
+                <label id="labelConfirmSenha" for="senha">Confirmar Senha</label>
+                <i id="confirmSenha" class="fa fa-eye" aria-hidden="false"></i>
+            </div ><!--label-float-->
+
+
+            <div class="justify-center">
+                <button onclick="cadastrar()" >Cadastrar</button>
+            </div>
+
+
+
+        </div ><!--card-->
+    </div><!--container-->
+    
+</body>
+</html>
